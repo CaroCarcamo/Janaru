@@ -1,0 +1,123 @@
+<div class="page" data-name="nuevoProductoPorIngresar">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md"></span>
+          </a>
+        </div>
+        <div class="title">Nuevo prod. por Ingresar</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">Características del producto</div>
+      <div class="block">
+        <div class="block-title"></div>
+        <div class="list no-hairlines-md">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Nombre del producto</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract10" placeholder="Ej.: remera manga corta, buzo dama, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Tipo de producto/Categoría</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract11" placeholder="Ej.: remera, cartera, pantalón, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Marca</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract12" placeholder="Tu marca, otra marca, o ninguna." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Precio</div>
+                <div class="item-input-wrap">
+                  <input type="number" id="caract13" placeholder="$---" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-inner">
+                <div class="item-media padding-left padding-bottom">Cantidad</div>
+                <div class="item-after padding-bottom padding-top-half">
+                  <div class="stepper stepper-small stepper-round stepper-fill stepper-init color-orange">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" id="caract14" value="0" min="0" max="100" step="1" readonly />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                  </div>    
+                </div>
+              </div> 
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Fecha estimada de llegada</div>
+                <div class="item-input-wrap">
+                  <input type="date" id="caract15" placeholder="Elegí una fecha." />
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Talle/Tamaño</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract16" placeholder="Ej.: L, XL, 46, 15 x 20 cm, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Color/Nombre de tono</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract17" placeholder="Ej: rojo, verde, Rouge, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Sabor</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract18" placeholder="Ej.: limón, chocolate, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Otra variante</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract19" placeholder="Otra característica que necesites agregar." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="block">
+          <button id="btnListoPorIng" class="col button button-fill color-orange">Listo!</button>
+        </div>
+
+      </div>
+    </div>
+</div>

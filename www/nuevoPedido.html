@@ -1,0 +1,123 @@
+<div class="page" data-name="nuevoPedido">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md"></span>
+          </a>
+        </div>
+        <div class="title">Nuevo pedido</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title padding-left">Detalle</div>
+      <div class="block">
+        <div class="block-title"></div>
+        <div class="list no-hairlines-md">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Cliente</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="detalle1" placeholder="Ej.: remera, cartera, pantalón, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a class="item-link smart-select smart-select-init" data-open-in="popup" data-searchbar="true"
+                data-searchbar-placeholder="Buscá un producto">
+                <div class="list accordion-list">
+                  <select id="detalle2" name="select" multiple>
+                    <ul><optgroup id="selectProd"></optgroup></ul>
+                  </select>
+                </div>
+                <div class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title">Productos</div>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Teléfono cliente</div>
+                <div class="item-input-wrap">
+                  <input type="number" id="detalle3" placeholder="Ej: 0294-154333333" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Medio de contacto</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="detalle4" placeholder="Ej.: Facebook, Instagram, WhatsApp, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Método de entrega</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="detalle5" placeholder="Ej.: Delivery, retiro en puerta, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Fecha de entrega</div>
+                <div class="item-input-wrap">
+                  <input type="date" id="detalle6" placeholder="Elegí una fecha." />
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Dirección</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="detalle7" placeholder="Ej: domicilio cliente o punto de encuentro." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Observaciones</div>
+                <div class="item-input-wrap">
+                  <textarea id="detalle8" class="resizable" placeholder="Ej.: Avisar cuando esté llegando, envolver para regalo, etc."></textarea>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Total</div>
+                <div class="item-input-wrap">
+                  <input type="number" id="detalle9"/>
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Estado del pedido</div>
+                <div class="item-input-wrap">
+                  <input id="autocomplete-dropdown-all" type="text" placeholder="Seleccioná una opción." />
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="block">
+          <button id="btnGuardarPedido" class="col button button-fill color-orange">Listo</button>
+        </div>
+
+      </div>
+    </div>
+</div>

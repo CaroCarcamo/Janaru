@@ -1,0 +1,106 @@
+<div class="page" data-name="nuevoProducto">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md"></span>
+          </a>
+        </div>
+        <div class="title">Nuevo producto</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="block-title">Características del producto</div>
+      <div class="block">
+        <div class="block-title"></div>
+        <div class="list no-hairlines-md">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Nombre del producto</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract1" placeholder="Ej.: remera manga corta, buzo dama, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Tipo de producto/Categoría</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract2" placeholder="Ej.: remera, cartera, pantalón, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Precio</div>
+                <div class="item-input-wrap">
+                  <input type="number" id="caract4" placeholder="$---" />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item-inner">
+                <div class="item-media padding-left padding-bottom">Cantidad</div>
+                <div class="item-after padding-bottom padding-top-half">
+                  <div class="stepper stepper-small stepper-round stepper-fill stepper-init color-orange">
+                  <div class="stepper-button-minus"></div>
+                  <div class="stepper-input-wrap">
+                    <input type="text" id="caract5" value="0" min="0" max="100" step="1" readonly />
+                  </div>
+                  <div class="stepper-button-plus"></div>
+                  </div>    
+                </div>
+              </div> 
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Talle/Tamaño</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract6" placeholder="Ej.: L, XL, 46, 15 x 20 cm, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Color/Nombre de tono</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract7" placeholder="Ej: rojo, verde, Rouge, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Sabor</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract8" placeholder="Ej.: limón, chocolate, etc." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label label-forms-inventarios">Otra variante</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="caract9" placeholder="Otra característica que necesites agregar." />
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="block">
+          <button id="btnListoInv" class="col button button-fill color-orange">Listo!</button>
+        </div>
+
+      </div>
+    </div>
+</div>

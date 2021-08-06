@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">-->
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#009688">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- Your app title -->
+    <title>Janaru</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/framework7-bundle.min.css">
+    <!-- Path to icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+       
+            
+    	    <div class="navbar navbar-transparent">
+    	      <div class="navbar-bg"></div>
+    	      <div class="navbar-inner sliding">
+    	        <div class="left">
+    	          <a class="link back">
+    	           <!-- <i class="icon icon-back"></i>-->
+    	            <span class="if-not-md"></span>
+    	          </a>
+    	        </div>
+    	        <div class="title">Transparent Navbar</div>
+    	      </div>
+    	    </div>
+        
+            <!-- Toolbar 
+            <div class="toolbar toolbar-bottom">
+                <div class="toolbar-inner">
+                 Toolbar links 
+                <a href="#" class="link">Info</a>
+                <a href="#" class="link">Ayuda</a>
+                </div>
+            </div>-->
+        
+        <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page fondoInicio">
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                    <div class="block">
+                          <div class="block-title"></div>
+                          <div class="centrar">
+                            <img src="img/logo.png" style="width: 380px" class="margin-bottom">
+                          </div>
+					      <div class="list no-hairlines-md">
+					        <ul  style="background-color: transparent">
+					          <li class="item-content item-input">
+					            <div class="item-inner">
+					              <div class="item-title item-label">E-mail</div>
+					              <div class="item-input-wrap">
+					                <input id="emailLogin" type="email" value="caro@gmail.com" placeholder="Tu e-mail" />
+					                <span class="input-clear-button"></span>
+					              </div>
+					            </div>
+					          </li>
+					          <li class="item-content item-input">
+					            <div class="item-inner">
+					              <div class="item-title item-label">Contraseña</div>
+					              <div class="item-input-wrap">
+					                <input id="passwordLogin" type="password" value="123456" placeholder="Tu contraseña" />
+					                <span class="input-clear-button"></span>
+					              </div>
+					            </div>
+					          </li>
+					        </ul>
+					      </div>
+					      <br>
+					      <button id="entrar" class="col button button-fill color-orange">Entrar</button>
+                        <br><br>
+
+                        <!-- Link to another page -->
+                        <a class="centrar" href="/recuperoContraseña/">¿Olvidaste tu contraseña?</a>
+                        <br>
+                        <a class="centrar" href="/registro/">Registrate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+       <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBMYt3nwqbfrPRmghWG8E_3Yv-qAtpcm6s",
+        authDomain: "janaru-app.firebaseapp.com",
+        projectId: "janaru-app",
+        storageBucket: "janaru-app.appspot.com",
+        messagingSenderId: "794899998039",
+        appId: "1:794899998039:web:879f83de25a2f47846ca12"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/framework7-bundle.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
